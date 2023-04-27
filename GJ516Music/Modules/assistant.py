@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 MrProgrammer72 
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -29,12 +29,12 @@ from GJ516Music import ASS_MENTION, LOGGER, SUDOERS, app, app2
 @app.on_message(filters.command(["asspfp", "setpfp"]) & SUDOERS)
 async def set_pfp(_, message: Message):
     if message.reply_to_message.photo:
-        fuk = await message.reply_text("» ᴄʜᴀɴɢɪɴɢ ᴀssɪsᴛᴀɴᴛ's ᴘʀᴏғɪʟᴇ ᴘɪᴄ...")
+        fuk = await message.reply_text("𝙉𝙤 𝘾𝙝𝙖𝙣𝙜𝙞𝙣𝙜 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩'𝙨 𝙋𝙧𝙤𝙛𝙞𝙡𝙚 𝙋𝙞𝙘...")
         img = await message.reply_to_message.download()
         try:
             await app2.set_profile_photo(photo=img)
             return await fuk.edit_text(
-                f"» {ASS_MENTION} ᴘʀᴏғɪʟᴇ ᴘɪᴄ ᴄʜᴀɴɢᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ."
+                f"» {ASS_MENTION} 𝙋𝙧𝙤𝙛𝙞𝙡𝙚 𝙋𝙞𝙘 𝘾𝙝𝙖𝙣𝙜𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮.."
             )
         except:
             return await fuk.edit_text("» ғᴀɪʟᴇᴅ ᴛᴏ ᴄʜᴀɴɢᴇ ᴀssɪsᴛᴀɴᴛ's ᴘʀᴏғɪʟᴇ ᴘɪᴄ.")
