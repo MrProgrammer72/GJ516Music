@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 MrProgrammer72 
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -58,7 +58,7 @@ async def GJ516_startup():
     try:
         await app.send_message(
             SUNAME,
-            f"✯ ғᴀʟʟᴇɴ ᴍᴜsɪᴄ ʙᴏᴛ ✯\n\n𖢵 ɪᴅ : `{BOT_ID}`\n𖢵 ɴᴀᴍᴇ : {BOT_NAME}\n𖢵 ᴜsᴇʀɴᴀᴍᴇ : @{BOT_USERNAME}",
+            f"❇ 𝗚𝗝𝟱𝟭𝟲 𝗠𝗨𝗦𝗜𝗖 𝗕𝗢𝗧 ❇\n\n⎋ 𝙄𝙙 : `{BOT_ID}`\n⎋ 𝙉𝙖𝙢𝙚 : {BOT_NAME}\n⎋ 𝙐𝙨𝙚𝙧𝙣𝙖𝙢𝙚 : @{BOT_USERNAME}",
         )
     except:
         LOGGER.error(
@@ -68,7 +68,7 @@ async def GJ516_startup():
     try:
         await app2.send_message(
             SUNAME,
-            f"✯ ғᴀʟʟᴇɴ ᴍᴜsɪᴄ ᴀss ✯\n\n𖢵 ɪᴅ : `{ASS_ID}`\n𖢵 ɴᴀᴍᴇ : {ASS_NAME}\n𖢵 ᴜsᴇʀɴᴀᴍᴇ : @{ASS_USERNAME}",
+            f"✯ 𝗚𝗝𝟱𝟭𝟲 𝗠𝗨𝗦𝗜𝗖 𝗔𝗦𝗦 ✯\n\n⎋ 𝙄𝙙 : `{ASS_ID}`\n⎋ 𝙉𝙖𝙢𝙚 : {ASS_NAME}\n⎋ 𝙐𝙨𝙚𝙧𝙣𝙖𝙢𝙚 : @{ASS_USERNAME}",
         )
     except:
         LOGGER.error(
@@ -77,8 +77,8 @@ async def GJ516_startup():
 
     await app2.send_message(BOT_USERNAME, "/start")
 
-    LOGGER.info(f"[•] Bot Started As {BOT_NAME}.")
-    LOGGER.info(f"[•] Assistant Started As {ASS_NAME}.")
+    LOGGER.info(f"[•] Jay Bot Started As {BOT_NAME}.")
+    LOGGER.info(f"[•] Jay Assistant Started As {ASS_NAME}.")
 
     LOGGER.info(
         "[•] \x53\x74\x61\x72\x74\x69\x6e\x67\x20\x50\x79\x54\x67\x43\x61\x6c\x6c\x73\x20\x43\x6c\x69\x65\x6e\x74\x2e\x2e\x2e"
