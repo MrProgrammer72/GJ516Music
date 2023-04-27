@@ -28,8 +28,8 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 import config
-from FallenMusic import BOT_NAME, StartTime, app
-from FallenMusic.Helpers import get_readable_time
+from GJ516Music import BOT_NAME, StartTime, app
+from GJ516Music.Helpers import get_readable_time
 
 
 @app.on_message(filters.command("ping"))
