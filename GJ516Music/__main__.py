@@ -68,7 +68,7 @@ async def GJ516_startup():
     try:
         await app2.send_message(
             SUNAME,
-            f"✯ 𝗚𝗝𝟱𝟭𝟲 𝗠𝗨𝗦𝗜𝗖 𝗔𝗦𝗦 ✯\n\n⎋ 𝙄𝙙 : `{ASS_ID}`\n⎋ 𝙉𝙖𝙢𝙚 : {ASS_NAME}\n⎋ 𝙐𝙨𝙚𝙧𝙣𝙖𝙢𝙚 : @{ASS_USERNAME}",
+            f"❇ 𝗚𝗝𝟱𝟭𝟲 𝗠𝗨𝗦𝗜𝗖 𝗔𝗦𝗦 ❇\n\n⎋ 𝙄𝙙 : `{ASS_ID}`\n⎋ 𝙉𝙖𝙢𝙚 : {ASS_NAME}\n⎋ 𝙐𝙨𝙚𝙧𝙣𝙖𝙢𝙚 : @{ASS_USERNAME}",
         )
     except:
         LOGGER.error(
