@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 MrProgrammer72 
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -26,7 +26,7 @@ import config
 from GJ516Music import BOT_USERNAME
 
 close_key = InlineKeyboardMarkup(
-    [[InlineKeyboardButton(text="✯ ᴄʟᴏsᴇ ✯", callback_data="close")]]
+    [[InlineKeyboardButton(text="❰𝗖𝗹𝗼𝘀𝗲❱", callback_data="close")]]
 )
 
 
