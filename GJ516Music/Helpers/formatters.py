@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 MrProgrammer72 
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -25,7 +25,7 @@ def get_readable_time(seconds: int) -> str:
     count = 0
     ping_time = ""
     time_list = []
-    time_suffix_list = ["s", "ᴍ", "ʜ", "ᴅᴀʏs"]
+    time_suffix_list = ["𝙎", "𝙈", "𝙃","𝘿𝘼𝙔𝙎"]
     while count < 4:
         count += 1
         if count < 3:
