@@ -1,7 +1,7 @@
 {
-    "name": "ғᴀʟʟᴇɴ ダ ᴍᴜsɪᴄ",
+    "name": "GJ516 MUSIC",
     "description": "A VC Player Bot for telegram videochats, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://te.legra.ph/file/6f99c49bdb4679acad717.jpg",
+    "logo": "https://telegra.ph/file/db8765da6945e3c9333e6.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -28,11 +28,11 @@
       },
       "OWNER_ID": {
         "description": "Fill your user id here. (Must be integer)",
-        "value": "1356469075",
+        "value": "1864894033",
         "required": true
       },
       "SESSION": {
-        "description": "A pyrogram v2 string session from @StringFatherBot",
+        "description": "A pyrogram v2 string sessioN",
         "value": "",
         "required": true
       },
@@ -43,7 +43,7 @@
       },
       "SUPPORT_CHAT": {
         "description": "Link of your telegram support group. (Must pe public)",
-        "value": "https://t.me/DevilsHeavenMF",
+        "value": "https://t.me/GJ516_DISCUSS_GROUP",
         "required": false
       }
     },
