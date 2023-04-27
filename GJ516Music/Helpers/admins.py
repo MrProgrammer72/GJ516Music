@@ -41,7 +41,7 @@ def admin_check(func: Callable) -> Callable:
         check = await app.get_chat_member(message.chat.id, message.from_user.id)
         if check.status not in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR]:
             return await message.reply_text(
-                "𝙔𝙤𝙪 ' 𝙖𝙧𝙚 𝙉𝙤𝙩 𝘼𝙣 𝙅𝙖𝙮 𝘼𝙙𝙢𝙞𝙣, 𝙋𝙡𝙚𝙖𝙨𝙚 𝙎𝙩𝙖𝙮 𝙄𝙣 𝙔𝙤𝙪𝙧 𝙇𝙞𝙢𝙞𝙩𝙨."
+                "𝙔𝙤𝙪'𝙖𝙧𝙚 𝙉𝙤𝙩 𝘼𝙣 𝙅𝙖𝙮 𝘼𝙙𝙢𝙞𝙣, 𝙋𝙡𝙚𝙖𝙨𝙚 𝙎𝙩𝙖𝙮 𝙄𝙣 𝙔𝙤𝙪𝙧 𝙇𝙞𝙢𝙞𝙩𝙨."
             )
 
         admin = (
