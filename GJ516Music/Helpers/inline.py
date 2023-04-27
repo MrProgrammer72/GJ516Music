@@ -33,10 +33,9 @@ close_key = InlineKeyboardMarkup(
 buttons = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="▷", callback_data="resume_cb"),
-            InlineKeyboardButton(text="II", callback_data="pause_cb"),
-            InlineKeyboardButton(text="‣‣I", callback_data="skip_cb"),
-            InlineKeyboardButton(text="▢", callback_data="end_cb"),
+            InlineKeyboardButton(text="❰𝙊𝙬𝙣𝙚𝙧❱",User_id=config.OWNER_ID),
+            InlineKeyboardButton(text="❰𝙂𝙧𝙤𝙪𝙥❱", Url=config.SUPPORT_CHAT),
+            
         ]
     ]
 )
@@ -45,20 +44,17 @@ buttons = InlineKeyboardMarkup(
 pm_buttons = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+            text="➕ 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 ➕",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
-    [InlineKeyboardButton(text="ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="GJ516_help")],
+    [InlineKeyboardButton(text="❰𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨❱", callback_data="GJ516_help")],
     [
-        InlineKeyboardButton(text="❄ ᴄʜᴀɴɴᴇʟ ❄", url=config.SUPPORT_CHANNEL),
-        InlineKeyboardButton(text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=config.SUPPORT_CHAT),
+        InlineKeyboardButton(text="❰𝗨𝗽𝗱𝗮𝘁𝗲𝘀❱", url=config.SUPPORT_CHANNEL),
+        InlineKeyboardButton(text="❰𝗚𝗿𝗼𝘂𝗽❱", url=config.SUPPORT_CHAT),
     ],
     [
-        InlineKeyboardButton(
-            text="☁️ sᴏᴜʀᴄᴇ ☁️", url="https://github.com/AnonymousX1025/GJ516Music"
-        ),
-        InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", user_id=config.OWNER_ID),
+        InlineKeyboardButton(text="❰𝙊𝙬𝙣𝙚𝙧❱ ", user_id=config.OWNER_ID),
     ],
 ]
 
@@ -66,19 +62,16 @@ pm_buttons = [
 gp_buttons = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+            text="➕ 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 ➕ ",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
     [
-        InlineKeyboardButton(text="❄ ᴄʜᴀɴɴᴇʟ ❄", url=config.SUPPORT_CHANNEL),
-        InlineKeyboardButton(text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=config.SUPPORT_CHAT),
+        InlineKeyboardButton(text="❰𝗨𝗽𝗱𝗮𝘁𝗲𝘀❱", url=config.SUPPORT_CHANNEL),
+        InlineKeyboardButton(text="❰𝗚𝗿𝗼𝘂𝗽❱", url=config.SUPPORT_CHAT),
     ],
     [
-        InlineKeyboardButton(
-            text="☁️ sᴏᴜʀᴄᴇ ☁️", url="https://github.com/TheAnonymous2005/GJ516Music"
-        ),
-        InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", user_id=config.OWNER_ID),
+        InlineKeyboardButton(text="❰𝙊𝙬𝙣𝙚𝙧❱ ", user_id=config.OWNER_ID),
     ],
 ]
 
@@ -86,25 +79,25 @@ gp_buttons = [
 helpmenu = [
     [
         InlineKeyboardButton(
-            text="ᴇᴠᴇʀʏᴏɴᴇ",
+            text="𝗔𝗱𝗺𝗶𝗻'𝘀",
             callback_data="GJ516_cb help",
         )
     ],
     [
-        InlineKeyboardButton(text="sᴜᴅᴏ", callback_data="GJ516_cb sudo"),
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", callback_data="GJ516_cb owner"),
+        InlineKeyboardButton(text="𝙎𝙪𝙙𝙤", callback_data="GJ516_cb sudo"),
+        InlineKeyboardButton(text="𝙂𝙞𝙩𝙍𝙚𝙥𝙤", callback_data="GJ516_cb owner"),
     ],
     [
-        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="GJ516_home"),
-        InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close"),
+        InlineKeyboardButton(text="❰𝗕𝗮𝗰𝗸❱", callback_data="GJ516_home"),
+        InlineKeyboardButton(text="❰𝗖𝗹𝗼𝘀𝗲❱", callback_data="close"),
     ],
 ]
 
 
 help_back = [
-    [InlineKeyboardButton(text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=config.SUPPORT_CHAT)],
+    [InlineKeyboardButton(text="❰𝗚𝗿𝗼𝘂𝗽❱", url=config.SUPPORT_CHAT)],
     [
-        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="GJ516_help"),
-        InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close"),
+        InlineKeyboardButton(text="❰𝗕𝗮𝗰𝗸❱", callback_data="GJ516_help"),
+        InlineKeyboardButton(text="❰𝗖𝗹𝗼𝘀𝗲❱", callback_data="close"),
     ],
 ]
