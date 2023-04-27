@@ -85,7 +85,7 @@ helpmenu = [
     ],
     [
         InlineKeyboardButton(text="𝙎𝙪𝙙𝙤", callback_data="GJ516_cb sudo"),
-        InlineKeyboardButton(text="𝙂𝙞𝙩𝙍𝙚𝙥𝙤", Url=f"https://github.com/MrProgrammer72/GJ516Music"),
+        InlineKeyboardButton(text="𝙂𝙞𝙩𝙍𝙚𝙥𝙤",Url=f"https://github.com/MrProgrammer72/GJ516Music"),
     ],
     [
         InlineKeyboardButton(text="❰𝗕𝗮𝗰𝗸❱", callback_data="GJ516_home"),
