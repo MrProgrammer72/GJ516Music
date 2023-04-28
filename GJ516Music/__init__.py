@@ -93,7 +93,7 @@ async def GJ516_startup():
     ASS_MENTION = getme2.mention
     try:
         await app2.join_chat("GJ516_DISCUSS_GROUP")
-        await app2.join_chat("GJ516_DISCUSS_GROUP")
+        await app2.join_chat("myworldGJ516")
     except:
         pass
 
