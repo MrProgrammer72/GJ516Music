@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 MrProgrammer72 
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -53,7 +53,7 @@ async def edit_or_reply(msg: Message, **kwargs):
 @app.on_message(filters.command("eval") & SUDOERS & ~filters.forwarded)
 async def executor(client, message):
     if len(message.command) < 2:
-        return await edit_or_reply(message, text="**ᴡʜᴀᴛ ʏᴏᴜ ᴡᴀɴɴᴀ ᴇxᴇᴄᴜᴛᴇ ʙᴀʙʏ ?**")
+        return await edit_or_reply(message, text="**𝙒𝙝𝙖𝙩 𝙮𝙤𝙪 𝙒𝙖𝙣𝙣𝙖 𝙀𝙭𝙚𝙘𝙪𝙩𝙚?**")
     try:
         cmd = message.text.split(" ", maxsplit=1)[1]
     except IndexError:
