@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 MrProgrammer72 
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -46,4 +46,4 @@ async def clear_misc(_, message: Message):
     if os_dir:
         for lel in os.listdir(pth):
             os.system("rm -rf *.webm *.jpg *.png")
-    await message.reply_text("» ᴀʟʟ ᴛᴇᴍᴘ ᴅɪʀᴇᴄᴛᴏʀɪᴇs ᴄʟᴇᴀɴᴇᴅ.")
+    await message.reply_text("𝘼𝙡𝙡 𝙏𝙚𝙢𝙥 𝘿𝙞𝙧𝙚𝙘𝙩𝙤𝙧𝙞𝙚𝙨 𝙘𝙡𝙚𝙖𝙣𝙚𝙙.")
