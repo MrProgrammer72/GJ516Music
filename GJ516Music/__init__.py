@@ -92,8 +92,8 @@ async def GJ516_startup():
     ASS_USERNAME = getme2.username
     ASS_MENTION = getme2.mention
     try:
-        await app2.join_chat("DevilsHeavenMF")
-        await app2.join_chat("GJ516Association")
+        await app2.join_chat("GJ516_DISCUSS_GROUP")
+        await app2.join_chat("GJ516_DISCUSS_GROUP")
     except:
         pass
 
