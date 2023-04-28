@@ -208,8 +208,7 @@ async def help_menu(_, query: CallbackQuery):
 
     try:
         await query.edit_message_text(
-            text=f"𝙃𝙚𝙮 {query.from_user.first_name}, 🥀
-\n\n 𝙋𝙡𝙚𝙖𝙨𝙚 𝘾𝙡𝙞𝙘𝙠 𝙊𝙣 𝙩𝙝𝙚 𝘽𝙪𝙩𝙩𝙤𝙣 𝘽𝙚𝙡𝙤𝙬 𝙁𝙤𝙧 𝙒𝙝𝙞𝙘𝙝 𝙔𝙤𝙪 𝙒𝙖𝙣𝙣𝙖 𝙂𝙚𝙩 𝙃𝙚𝙡𝙥.",
+            text=f" 𝙃𝙚𝙮 {query.from_user.first_name},\n\n 𝙋𝙡𝙚𝙖𝙨𝙚 𝘾𝙡𝙞𝙘𝙠 𝙊𝙣 𝙩𝙝𝙚 𝘽𝙪𝙩𝙩𝙤𝙣 𝘽𝙚𝙡𝙤𝙬 𝙁𝙤𝙧 𝙒𝙝𝙞𝙘𝙝 𝙔𝙤𝙪 𝙒𝙖𝙣𝙣𝙖 𝙂𝙚𝙩 𝙃𝙚𝙡𝙥.",
             reply_markup=InlineKeyboardMarkup(helpmenu),
         )
     except Exception as e:
