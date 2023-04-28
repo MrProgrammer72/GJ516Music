@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 MrProgrammer72 
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -39,7 +39,7 @@ async def inline_query_handler(_, query):
             await app.answer_inline_query(
                 query.id,
                 results=answers,
-                switch_pm_text="ᴛʏᴘᴇ sᴏᴍᴇᴛʜɪɴɢ ᴛᴏ sᴇᴀʀᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ...",
+                switch_pm_text="𝙏𝙮𝙥𝙚 𝙎𝙤𝙢𝙚𝙩𝙝𝙞𝙣𝙜 𝙏𝙤 𝙎𝙚𝙖𝙧𝙘𝙝𝙞𝙣𝙜 𝙊𝙣 𝙔𝙤𝙪𝙏𝙪𝙗𝙚 ♪",
                 cache_time=10,
             )
         except:
@@ -61,21 +61,21 @@ async def inline_query_handler(_, query):
                 [
                     [
                         InlineKeyboardButton(
-                            text="• ʏᴏᴜᴛᴜʙᴇ •",
+                            text="𝙔𝙤𝙪𝙏𝙪𝙗𝙚",
                             url=link,
                         )
                     ],
                 ]
             )
             searched_text = f"""
-✨ **ᴛɪᴛʟᴇ :** [{title}]({link})
+✨ **𝙏𝙞𝙩𝙡𝙚 :** [{title}]({link})
 
-⏳ **ᴅᴜʀᴀᴛɪᴏɴ :** `{duration}`ᴍɪɴᴜᴛᴇs
-👀 **ᴠɪᴇᴡs :** `{views}`
-⏰ **ᴩᴜʙʟɪsʜᴇᴅ ᴏɴ :** {published}
-🎥 **ᴄʜᴀɴɴᴇʟ :** [{channel}]({channellink})
+⏳ **𝙙𝙪𝙧𝙖𝙩𝙞𝙤𝙣 :** `{duration}`𝙈𝙞𝙣𝙨
+👀 **𝙑𝙞𝙚𝙬𝙨 :** `{views}`
+⏰ **𝙋𝙪𝙗𝙡𝙞𝙨𝙝𝙚𝙙 𝙊𝙣 :** {published}
+🎥 **𝘾𝙝𝙖𝙣𝙣𝙚𝙡:** [{channel}]({channellink})
 
-<u>💖 **sᴇᴀʀᴄʜ ᴩᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME}**</u>"""
+<u>💖 **𝗦𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴 𝗣𝗼𝘄𝗲𝗿𝗱 𝗯𝘆 {BOT_NAME}**</u>"""
             answers.append(
                 InlineQueryResultPhoto(
                     photo_url=thumbnail,
