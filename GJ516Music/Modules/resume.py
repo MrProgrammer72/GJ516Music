@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 MrProgrammer72 
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -36,10 +36,10 @@ async def res_str(_, message: Message):
         pass
 
     if await is_streaming(message.chat.id):
-        return await message.reply_text("ᴅɪᴅ ʏᴏᴜ ʀᴇᴍᴇᴍʙᴇʀ ᴛʜᴀᴛ ʏᴏᴜ ᴘᴀᴜsᴇᴅ ᴛʜᴇ sᴛʀᴇᴀᴍ ?")
+        return await message.reply_text("𝘿𝙞𝙙 𝙔𝙤𝙪 𝙍𝙚𝙢𝙚𝙢𝙗𝙚𝙧 𝙏𝙝𝙖𝙩 𝙮𝙤𝙪 𝙋𝙖𝙪𝙨𝙚𝙙 𝙏𝙝𝙚 𝙎𝙩𝙧𝙚𝙖𝙢 ?")
     await stream_on(message.chat.id)
     await pytgcalls.resume_stream(message.chat.id)
     return await message.reply_text(
-        text=f"➻ sᴛʀᴇᴀᴍ ʀᴇsᴜᴍᴇᴅ 💫\n│ \n└ʙʏ : {message.from_user.mention} 🥀",
+        text=f"𝙎𝙩𝙧𝙚𝙖𝙢 𝙍𝙚𝙨𝙪𝙢𝙚𝙙\n│ \n└𝘽𝙮 : {message.from_user.mention} 🥀",
         reply_markup=close_key,
     )
