@@ -179,7 +179,7 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await GJ516.edit_text("𝙒𝙝𝙖𝙩  𝘿𝙤 𝙔𝙤𝙪 𝙬𝙖𝙣𝙣𝙖 𝙋𝙡𝙖𝙮 ?")
-        await GJ516.edit_text("🔎")
+        await GJ516.edit_text("💸")
         query = message.text.split(None, 1)[1]
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
