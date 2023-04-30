@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 MrProgrammer72 
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -35,7 +35,7 @@ from GJ516Music.Helpers import get_readable_time
 @app.on_message(filters.command("ping"))
 async def ping_fallen(_, message: Message):
     hmm = await message.reply_photo(
-        photo=config.PING_IMG, caption=f"{BOT_NAME} ɪs ᴘɪɴɢɪɴɢ..."
+        photo=config.PING_IMG, caption=f"{BOT_NAME} 𝙄𝙨 𝙋𝙞𝙣𝙜𝙞𝙣𝙜...."
     )
     upt = int(time.time() - StartTime)
     cpu = psutil.cpu_percent(interval=0.5)
@@ -46,14 +46,14 @@ async def ping_fallen(_, message: Message):
     uptime = get_readable_time((upt))
 
     await hmm.edit_text(
-        f"""➻ ᴩᴏɴɢ : `{resp}ᴍs`
+        f"""𝙋𝙤𝙣𝙜 : `{resp}𝙈𝙨`
 
-<b><u>{BOT_NAME} sʏsᴛᴇᴍ sᴛᴀᴛs :</u></b>
+<b><u>{BOT_NAME} 𝙎𝙮𝙨𝙩𝙚𝙢 𝙎𝙩𝙖𝙩𝙨 :</u></b>
 
-๏ **ᴜᴩᴛɪᴍᴇ :** {uptime}
-๏ **ʀᴀᴍ :** {mem}
-๏ **ᴄᴩᴜ :** {cpu}
-๏ **ᴅɪsᴋ :** {disk}""",
+✾ **𝙐𝙥𝙩𝙞𝙢𝙚 :** {uptime}
+✾ **𝙍𝙖𝙢 :** {mem}
+✾ **𝘾𝙥𝙪 :** {cpu}
+✾ **𝘿𝙞𝙨𝙠 :** {disk}""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
