@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 MrProgrammer72 
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -66,7 +66,7 @@ from GJ516Music.Helpers.thumbnails import gen_qthumb, gen_thumb
     & ~filters.via_bot
 )
 async def play(_, message: Message):
-    GJ516 = await message.reply_text("» ᴘʀᴏᴄᴇssɪɴɢ, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...")
+    GJ516 = await message.reply_text("𝙋𝙧𝙤𝙘𝙚𝙨𝙨𝙞𝙣𝙜, 𝙋𝙡𝙚𝙖𝙨𝙚 𝙒𝙖𝙞𝙩 ........")
     try:
         await message.delete()
     except:
@@ -77,21 +77,21 @@ async def play(_, message: Message):
             get = await app.get_chat_member(message.chat.id, ASS_ID)
         except ChatAdminRequired:
             return await GJ516.edit_text(
-                f"» ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴs ᴛᴏ ɪɴᴠɪᴛᴇ ᴜsᴇʀs ᴠɪᴀ ʟɪɴᴋ ғᴏʀ ɪɴᴠɪᴛɪɴɢ {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}."
+                f"   𝙄 𝙙𝙤𝙣'𝙩 𝙃𝙖𝙫𝙚 𝙋𝙚𝙧𝙢𝙞𝙨𝙨𝙞𝙤𝙣 𝙏𝙤 𝙄𝙣𝙫𝙞𝙩𝙚 𝙋𝙚𝙧𝙢𝙞𝙨𝙨𝙞𝙤𝙣 𝙏𝙤 𝙄𝙣𝙫𝙞𝙩𝙚 𝙐𝙨𝙚𝙧𝙨 𝙑𝙞𝙖 𝙇𝙞𝙣𝙠 𝙁𝙤𝙧 𝙄𝙣𝙫𝙞𝙩𝙞𝙣𝙜  {BOT_NAME} 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙏𝙤 {message.chat.title}."
             )
         if get.status == ChatMemberStatus.BANNED:
             unban_butt = InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text=f"ᴜɴʙᴀɴ {ASS_NAME}",
+                            text=f"𝙐𝙣𝙗𝙖𝙣 {ASS_NAME}",
                             callback_data=f"unban_assistant {message.chat.id}|{ASS_ID}",
                         ),
                     ]
                 ]
             )
             return await GJ516.edit_text(
-                text=f"» {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ɪs ʙᴀɴɴᴇᴅ ɪɴ {message.chat.title}\n\n𖢵 ɪᴅ : `{ASS_ID}`\n𖢵 ɴᴀᴍᴇ : {ASS_MENTION}\n𖢵 ᴜsᴇʀɴᴀᴍᴇ : @{ASS_USERNAME}\n\nᴘʟᴇᴀsᴇ ᴜɴʙᴀɴ ᴛʜᴇ ᴀssɪsᴛᴀɴᴛ ᴀɴᴅ ᴘʟᴀʏ ᴀɢᴀɪɴ...",
+                text=f"» {BOT_NAME} 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙄𝙨 𝘽𝙖𝙣 𝙄𝙣  {message.chat.title}\n\n¤ 𝙄𝙙 : `{ASS_ID}`\n¤ 𝙉𝙖𝙢𝙚 : {ASS_MENTION}\n¤ 𝙐𝙨𝙚𝙧𝙣𝙖𝙢𝙚 : @{ASS_USERNAME}\n\n𝙋𝙡𝙚𝙖𝙨𝙚 𝙐𝙣𝙗𝙖𝙣 𝙏𝙝𝙚 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝘼𝙣𝙙 𝙋𝙡𝙖𝙮𝙞𝙣𝙜 𝘼𝙜𝙖𝙞𝙣.....",
                 reply_markup=unban_butt,
             )
     except UserNotParticipant:
@@ -106,28 +106,28 @@ async def play(_, message: Message):
                 invitelink = await app.export_chat_invite_link(message.chat.id)
             except ChatAdminRequired:
                 return await GJ516.edit_text(
-                    f"» ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴs ᴛᴏ ɪɴᴠɪᴛᴇ ᴜsᴇʀs ᴠɪᴀ ʟɪɴᴋ ғᴏʀ ɪɴᴠɪᴛɪɴɢ {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}."
+                    f"𝙄 𝙙𝙤𝙣'𝙩 𝙃𝙖𝙫𝙚 𝙋𝙚𝙧𝙢𝙞𝙨𝙨𝙞𝙤𝙣 𝙏𝙤 𝙄𝙣𝙫𝙞𝙩𝙚 𝙋𝙚𝙧𝙢𝙞𝙨𝙨𝙞𝙤𝙣 𝙏𝙤 𝙄𝙣𝙫𝙞𝙩𝙚 𝙐𝙨𝙚𝙧𝙨 𝙑𝙞𝙖 𝙇𝙞𝙣𝙠 𝙁𝙤𝙧 𝙄𝙣𝙫𝙞𝙩𝙞𝙣𝙜 {BOT_NAME} 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙏𝙤 {message.chat.title}."
                 )
             except Exception as ex:
                 return await GJ516.edit_text(
-                    f"ғᴀɪʟᴇᴅ ᴛᴏ ɪɴᴠɪᴛᴇ {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
+                    f"𝙁𝙖𝙞𝙡𝙚𝙙 𝙏𝙤 𝙄𝙣𝙫𝙞𝙩𝙚 {BOT_NAME} 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙏𝙤 {message.chat.title}.\n\n**𝙍𝙚𝙖𝙨𝙤𝙣 :** `{ex}`"
                 )
         if invitelink.startswith("https://t.me/+"):
             invitelink = invitelink.replace("https://t.me/+", "https://t.me/joinchat/")
         anon = await GJ516.edit_text(
-            f"ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...\n\nɪɴᴠɪᴛɪɴɢ {ASS_NAME} ᴛᴏ {message.chat.title}."
+            f"𝙋𝙡𝙚𝙖𝙨𝙚 𝙒𝙖𝙞𝙩....\n\n𝙄𝙣𝙫𝙞𝙩𝙞𝙣𝙜 {ASS_NAME} ᴛᴏ {message.chat.title}."
         )
         try:
             await app2.join_chat(invitelink)
             await asyncio.sleep(2)
             await GJ516.edit_text(
-                f"{ASS_NAME} ᴊᴏɪɴᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ,\n\nsᴛᴀʀᴛɪɴɢ sᴛʀᴇᴀᴍ..."
+                f"{ASS_NAME} 𝙅𝙤𝙞𝙣𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮 ,\n\n𝙎𝙩𝙖𝙧𝙩𝙞𝙣𝙜 𝙎𝙩𝙧𝙚𝙖𝙢..."
             )
         except UserAlreadyParticipant:
             pass
         except Exception as ex:
             return await GJ516.edit_text(
-                f"ғᴀɪʟᴇᴅ ᴛᴏ ɪɴᴠɪᴛᴇ {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
+                f"𝙁𝙖𝙞𝙡𝙚𝙙 𝙏𝙤 𝙄𝙣𝙫𝙞𝙩𝙚 {BOT_NAME} 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙏𝙤 {message.chat.title}.\n\n**𝙍𝙚𝙖𝙨𝙤𝙣 :** `{ex}`"
             )
         try:
             await app2.resolve_peer(invitelink)
@@ -144,7 +144,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ ᴏɴ {BOT_NAME}."
+                f"𝙎𝙤𝙧𝙧𝙮, 𝙏𝙧𝙖𝙘𝙠 𝙇𝙤𝙣𝙜𝙚𝙧 𝙏𝙝𝙖𝙣  {DURATION_LIMIT} 𝙈𝙞𝙣 𝘼𝙧𝙚 𝙉𝙤𝙩 𝘼𝙡𝙡𝙤𝙬𝙚𝙙 𝙏𝙤 𝙥𝙡𝙖𝙮 𝙤𝙣  {BOT_NAME}."
             )
 
         file_name = get_file_name(audio)
@@ -169,16 +169,16 @@ async def play(_, message: Message):
                 secmul *= 60
 
         except Exception as e:
-            return await GJ516.edit_text(f"sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ\n\n**ᴇʀʀᴏʀ :** `{e}`")
+            return await GJ516.edit_text(f"𝙎𝙤𝙢𝙚𝙩𝙝𝙞𝙣𝙜 𝙒𝙚𝙣𝙩 𝙒𝙧𝙤𝙣𝙜 \n\n**𝙀𝙧𝙧𝙤𝙧 :** `{e}`")
 
         if (dur / 60) > DURATION_LIMIT:
             return await GJ516.edit_text(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ ᴏɴ {BOT_NAME}."
+                f"𝙎𝙤𝙧𝙧𝙮, 𝙏𝙧𝙖𝙘𝙠 𝙇𝙤𝙣𝙜𝙚𝙧 𝙏𝙝𝙖𝙣   {DURATION_LIMIT} 𝙈𝙞𝙣 𝘼𝙧𝙚 𝙉𝙤𝙩 𝘼𝙡𝙡𝙤𝙬𝙚𝙙 𝙏𝙤 𝙥𝙡𝙖𝙮 𝙤𝙣  {BOT_NAME}."
             )
         file_path = audio_dl(url)
     else:
         if len(message.command) < 2:
-            return await GJ516.edit_text("» ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴɴᴀ ᴘʟᴀʏ ʙᴀʙʏ ?")
+            return await GJ516.edit_text("𝙒𝙝𝙖𝙩  𝘿𝙤 𝙔𝙤𝙪 𝙬𝙖𝙣𝙣𝙖 𝙋𝙡𝙖𝙮 ?")
         await GJ516.edit_text("🔎")
         query = message.text.split(None, 1)[1]
         try:
@@ -199,7 +199,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             return await GJ516.edit(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ ᴏɴ {BOT_NAME}."
+                f"𝙎𝙤𝙧𝙧𝙮, 𝙏𝙧𝙖𝙘𝙠 𝙇𝙤𝙣𝙜𝙚𝙧 𝙏𝙝𝙖𝙣  ᴛʜᴀɴ  {DURATION_LIMIT} 𝙈𝙞𝙣 𝘼𝙧𝙚 𝙉𝙤𝙩 𝘼𝙡𝙡𝙤𝙬𝙚𝙙 𝙏𝙤 𝙥𝙡𝙖𝙮 𝙤𝙣  {BOT_NAME}."
             )
         file_path = audio_dl(url)
 
