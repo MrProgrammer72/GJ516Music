@@ -91,7 +91,7 @@ async def play(_, message: Message):
                 ]
             )
             return await GJ516.edit_text(
-                text=f"» {BOT_NAME} 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙄𝙨 𝘽𝙖𝙣 𝙄𝙣  {message.chat.title}\n\n¤ 𝙄𝙙 : `{ASS_ID}`\n¤ 𝙉𝙖𝙢𝙚 : {ASS_MENTION}\n¤ 𝙐𝙨𝙚𝙧𝙣𝙖𝙢𝙚 : @{ASS_USERNAME}\n\n𝙋𝙡𝙚𝙖𝙨𝙚 𝙐𝙣𝙗𝙖𝙣 𝙏𝙝𝙚 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝘼𝙣𝙙 𝙋𝙡𝙖𝙮𝙞𝙣𝙜 𝘼𝙜𝙖𝙞𝙣.....",
+                text=f" {BOT_NAME} 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙄𝙨 𝘽𝙖𝙣 𝙄𝙣  {message.chat.title}\n\n☍ 𝙄𝙙 : `{ASS_ID}`\n☍ 𝙉𝙖𝙢𝙚 : {ASS_MENTION}\n☍ 𝙐𝙨𝙚𝙧𝙣𝙖𝙢𝙚 : @{ASS_USERNAME}\n\n𝙋𝙡𝙚𝙖𝙨𝙚 𝙐𝙣𝙗𝙖𝙣 𝙏𝙝𝙚 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝘼𝙣𝙙 𝙋𝙡𝙖𝙮𝙞𝙣𝙜 𝘼𝙜𝙖𝙞𝙣.....",
                 reply_markup=unban_butt,
             )
     except UserNotParticipant:
@@ -195,7 +195,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             LOGGER.error(str(e))
-            return await GJ516.edit("» ғᴀɪʟᴇᴅ ᴛᴏ ᴘʀᴏᴄᴇss ᴏ̨ᴜᴇʀʏ, ᴛʀʏ ᴘʟᴀʏɪɴɢ ᴀɢᴀɪɴ...")
+            return await GJ516.edit("𝙁𝙖𝙞𝙡𝙚𝙙 𝙩𝙤 𝙋𝙧𝙤𝙘𝙚𝙨𝙨 𝙦𝙪𝙚𝙧𝙮, 𝙏𝙧𝙮 𝙋𝙡𝙖𝙮𝙞𝙣𝙜 𝙖𝙜𝙖𝙞𝙣...")
 
         if (dur / 60) > DURATION_LIMIT:
             return await GJ516.edit(
@@ -235,15 +235,15 @@ async def play(_, message: Message):
 
         except NoActiveGroupCall:
             return await GJ516.edit_text(
-                "**» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ғᴏᴜɴᴅ.**\n\nᴩʟᴇᴀsᴇ ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ."
+                "**𝙉𝙤 𝘼𝙘𝙩𝙞𝙫𝙚 𝙑𝙞𝙙𝙚𝙤𝘾𝙝𝙖𝙩 𝙁𝙤𝙪𝙣𝙙.**\n\n𝙋𝙡𝙚𝙖𝙨𝙚 𝙈𝙖𝙠𝙚 𝙎𝙪𝙧𝙚 𝙎𝙩𝙖𝙧𝙩𝙚𝙙 𝙏𝙝𝙚 𝙑𝙤𝙞𝙘𝙚𝘾𝙝𝙖𝙩 ."
             )
         except TelegramServerError:
             return await GJ516.edit_text(
-                "» ᴛᴇʟᴇɢʀᴀᴍ ɪs ʜᴀᴠɪɴɢ sᴏᴍᴇ ɪɴᴛᴇʀɴᴀʟ ᴘʀᴏʙʟᴇᴍs, ᴘʟᴇᴀsᴇ ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ."
+                "𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝙞𝙨 𝙝𝙖𝙫𝙞𝙣𝙜 𝙎𝙤𝙢𝙚 𝙄𝙣𝙩𝙚𝙧𝙣𝙖𝙡 𝙋𝙧𝙤𝙗𝙡𝙚𝙢, 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙨𝙩𝙖𝙧𝙩 𝙏𝙝𝙚 𝙑𝙞𝙙𝙚𝙤𝘾𝙝𝙖𝙩 𝘼𝙣𝙙 𝙏𝙧𝙮 𝘼𝙜𝙖𝙞𝙣."
             )
         except UnMuteNeeded:
             return await GJ516.edit_text(
-                f"» {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ɪs ᴍᴜᴛᴇᴅ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ,\n\nᴘʟᴇᴀsᴇ ᴜɴᴍᴜᴛᴇ {ASS_MENTION} ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɴᴅ ᴛʀʏ ᴘʟᴀʏɪɴɢ ᴀɢᴀɪɴ."
+                f"» {BOT_NAME} 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙞𝙨 𝙈𝙪𝙩𝙚𝙙 𝙊𝙣 𝙑𝙞𝙙𝙚𝙤𝘾𝙝𝙖𝙩,\n\n𝙋𝙡𝙚𝙖𝙨𝙚 𝙐𝙣𝙢𝙪𝙩𝙚  {ASS_MENTION} 𝙊𝙣 𝙑𝙞𝙙𝙚𝙤𝘾𝙝𝙖𝙩 𝘼𝙣𝙙 𝙏𝙧𝙮 𝙋𝙡𝙖𝙮𝙞𝙣𝙜 𝘼𝙜𝙖𝙞𝙣."
             )
 
         imgt = await gen_thumb(videoid, message.from_user.id)
