@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 MrProgrammer72 
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -55,16 +55,16 @@ async def song(_, message: Message):
     except Exception as ex:
         LOGGER.error(ex)
         return await m.edit_text(
-            f"ғᴀɪʟᴇᴅ ᴛᴏ ғᴇᴛᴄʜ ᴛʀᴀᴄᴋ ғʀᴏᴍ ʏᴛ-ᴅʟ.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
+            f"𝙁𝙖𝙞𝙡𝙚𝙙 𝙩𝙤 𝙁𝙚𝙩𝙘𝙝 𝙏𝙧𝙖𝙘𝙠 𝙁𝙧𝙤𝙢 𝙔𝙩-𝘿𝙡.\n\n**𝙍𝙚𝙖𝙨𝙤𝙣 :** `{ex}`"
         )
 
-    await m.edit_text("» ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ sᴏɴɢ,\n\nᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...")
+    await m.edit_text("𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙞𝙣𝙜 𝙎𝙤𝙣𝙜,\n\n𝙋𝙡𝙚𝙖𝙨𝙚 𝙒𝙖𝙞𝙩...")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"☁️ **ᴛɪᴛʟᴇ :** [{title[:23]}]({link})\n⏱️ **ᴅᴜʀᴀᴛɪᴏɴ :** `{duration}`\n🥀 **ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ :** {BOT_MENTION}"
+        rep = f"𒀭 **𝙏𝙞𝙩𝙡𝙚 :** [{title[:23]}]({link})\n𒀭 **𝘿𝙪𝙧𝙖𝙩𝙞𝙤𝙣 :** `{duration}`\n𒀭 **𝙐𝙥𝙡𝙤𝙖𝙙𝙚𝙙 𝘽𝙮 :** {BOT_MENTION}"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(dur_arr[i]) * secmul
@@ -74,7 +74,7 @@ async def song(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ʏᴏᴜᴛᴜʙᴇ",
+                            text="𝙔𝙤𝙪𝙏𝙪𝙗𝙚",
                             url=link,
                         )
                     ]
@@ -91,26 +91,26 @@ async def song(_, message: Message):
             )
             if message.chat.type != ChatType.PRIVATE:
                 await message.reply_text(
-                    "ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘᴍ, sᴇɴᴛ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ sᴏɴɢ ᴛʜᴇʀᴇ."
+                    "𝙋𝙡𝙚𝙖𝙨𝙚 𝘾𝙝𝙚𝙘𝙠 𝙔𝙤𝙪𝙧 𝙋𝙢, 𝙎𝙚𝙣𝙩 𝙏𝙝𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩𝙚𝙙 𝙎𝙤𝙣𝙜 𝙏𝙝𝙚𝙧𝙚."
                 )
         except:
             start_butt = InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴄʟɪᴄᴋ ʜᴇʀᴇ",
+                            text="𝘾𝙡𝙞𝙘𝙠 𝙃𝙚𝙧𝙚",
                             url=f"https://t.me/{BOT_USERNAME}?start",
                         )
                     ]
                 ]
             )
             return await m.edit_text(
-                text="ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴀɴᴅ sᴛᴀʀᴛ ᴍᴇ ғᴏʀ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ sᴏɴɢs.",
+                text="𝘾𝙡𝙞𝙘𝙠 𝙊𝙣 𝙏𝙝𝙚 𝘽𝙪𝙩𝙩𝙤𝙣 𝘽𝙚𝙡𝙤𝙬 𝘼𝙣𝙙 𝙎𝙩𝙖𝙧𝙩 𝙈𝙚 𝙁𝙤𝙧 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙎𝙤𝙣𝙜.",
                 reply_markup=start_butt,
             )
         await m.delete()
     except:
-        return await m.edit_text("ғᴀɪʟᴇᴅ ᴛᴏ ᴜᴘʟᴏᴀᴅ ᴀᴜᴅɪᴏ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ sᴇʀᴠᴇʀs.")
+        return await m.edit_text("𝙁𝙖𝙞𝙡𝙚𝙙 𝙏𝙤 𝙐𝙥𝙡𝙤𝙖𝙙 𝘼𝙪𝙙𝙞𝙤 𝙊𝙣 𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝙎𝙚𝙧𝙫𝙚𝙧𝙨.")
 
     try:
         os.remove(audio_file)
