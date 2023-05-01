@@ -53,7 +53,9 @@ async def ping_fallen(_, message: Message):
 ✾ **𝙐𝙥𝙩𝙞𝙢𝙚 :** {uptime}
 ✾ **𝙍𝙖𝙢 :** {mem}
 ✾ **𝘾𝙥𝙪 :** {cpu}
-✾ **𝘿𝙞𝙨𝙠 :** {disk}""",
+✾ **𝘿𝙞𝙨𝙠 :** {disk}
+
+||𝙈𝙖𝙙𝙚 𝘽𝙮 : [𝙅𝙖𝙮💸](https://t.me/GJ516_DISCUSS_GROUP) || """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
