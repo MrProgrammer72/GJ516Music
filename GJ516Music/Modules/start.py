@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 MrProgrammer72 
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -52,23 +52,23 @@ async def GJ516_st(_, message: Message):
                     link = result["link"]
                     published = result["publishedTime"]
                 searched_text = f"""
-➻ **ᴛʀᴀᴄᴋ ɪɴғᴏʀɴᴀᴛɪᴏɴ** 
+➻ **𝗧𝗿𝗮𝗰𝗸 𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻** 
 
-📌 **ᴛɪᴛʟᴇ :** {title}
+📌 **𝙏𝙞𝙩𝙡𝙚 :** {title}
 
-⏳ **ᴅᴜʀᴀᴛɪᴏɴ :** {duration} ᴍɪɴᴜᴛᴇs
-👀 **ᴠɪᴇᴡs :** `{views}`
-⏰ **ᴩᴜʙʟɪsʜᴇᴅ ᴏɴ :** {published}
-🔗 **ʟɪɴᴋ :** [ᴡᴀᴛᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ]({link})
-🎥 **ᴄʜᴀɴɴᴇʟ :** [{channel}]({channellink})
+⏳ **𝘿𝙪𝙧𝙖𝙩𝙞𝙤𝙣 :** {duration} 𝙈𝙞𝙣
+👀 **𝙑𝙞𝙚𝙬𝙨 :** `{views}`
+⏰ **𝙋𝙪𝙗𝙡𝙞𝙨𝙝𝙚𝙙 𝙊𝙣 :** {published}
+🔗 **𝙇𝙞𝙣𝙠 :** [ᴡᴀᴛᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ]({link})
+🎥 **𝘾𝙝𝙖𝙣𝙣𝙚𝙡 :** [{channel}]({channellink})
 
-💖 sᴇᴀʀᴄʜ ᴩᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME}"""
+💖 𝙎𝙚𝙖𝙧𝙘𝙝 𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 ⚡︎ {BOT_NAME}"""
                 key = InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text="ʏᴏᴜᴛᴜʙᴇ", url=link),
+                            InlineKeyboardButton(text="𝙔𝙤𝙪𝙏𝙪𝙗𝙚", url=link),
                             InlineKeyboardButton(
-                                text="sᴜᴩᴩᴏʀᴛ", url=config.SUPPORT_CHAT
+                                text="𝙂𝙧𝙤𝙪𝙥", url=config.SUPPORT_CHAT
                             ),
                         ],
                     ]
