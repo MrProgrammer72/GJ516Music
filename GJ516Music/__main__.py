@@ -81,7 +81,7 @@ async def GJ516_startup():
     LOGGER.info(f"[•] Jay Assistant Started As {ASS_NAME}.")
 
     LOGGER.info(
-        "[•] \x53\x74\x61\x72\x74\x69\x6e\x67\x20\x50\x79\x54\x67\x43\x61\x6c\x6c\x73\x20\x43\x6c\x69\x65\x6e\x74\x2e\x2e\x2e"
+        "[•] jay music loaded "
     )
     await pytgcalls.start()
     await idle()
