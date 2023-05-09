@@ -222,7 +222,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo=qimg,
             caption=f"**⏳ 𝘼𝙙𝙙𝙚𝙙 𝙩𝙤 𝙌𝙪𝙚𝙪𝙚 𝙖𝙩 #{position}**\n\n**💡𝙏𝙞𝙩𝙡𝙚:** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n**⏱𝘿𝙪𝙧𝙖𝙩𝙞𝙤𝙣:** `{duration}`\n**👤𝘼𝙙𝙙𝙚𝙙 𝘽𝙮:** {ruser}",
-            reply_markup=jaybuttons,
+            reply_markup=buttons,
         )
     else:
         stream = AudioPiped(file_path, audio_parameters=HighQualityAudio())
