@@ -60,8 +60,6 @@ async def broadcast(_, message: Message):
         except Exception:
             continue
     try:
-        await brep.edit_text(f"**𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙈𝙖𝙨𝙨𝙖𝙜𝙚 𝙄𝙣 {sent} 𝘾𝙝𝙖𝙩 𖤘
-.**")
+        await brep.edit_text(f"**𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙈𝙖𝙨𝙨𝙖𝙜𝙚 𝙄𝙣 {sent} 𝘾𝙝𝙖𝙩 𖤘.** ")
     except:
-        await message.reply_text(f"**𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙈𝙖𝙨𝙨𝙖𝙜𝙚 𝙄𝙣 {sent} 𝘾𝙝𝙖𝙩 𖤘
-.**")
+        await message.reply_text(f"**𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙈𝙖𝙨𝙨𝙖𝙜𝙚 𝙄𝙣 {sent} 𝘾𝙝𝙖𝙩 𖤘 .** ")
