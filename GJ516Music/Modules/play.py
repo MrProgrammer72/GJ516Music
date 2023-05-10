@@ -199,7 +199,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             return await GJ516.edit(
-                f"𝙎𝙤𝙧𝙧𝙮, 𝙏𝙧𝙖𝙘𝙠 𝙇𝙤𝙣𝙜𝙚𝙧 𝙏𝙝𝙖𝙣  ᴛʜᴀɴ  {DURATION_LIMIT} 𝙈𝙞𝙣 𝘼𝙧𝙚 𝙉𝙤𝙩 𝘼𝙡𝙡𝙤𝙬𝙚𝙙 𝙏𝙤 𝙥𝙡𝙖𝙮 𝙤𝙣  {BOT_NAME}."
+                f"𝙎𝙤𝙧𝙧𝙮, 𝙏𝙧𝙖𝙘𝙠 𝙇𝙤𝙣𝙜𝙚𝙧 𝙏𝙝𝙖𝙣  {DURATION_LIMIT} 𝙈𝙞𝙣 𝘼𝙧𝙚 𝙉𝙤𝙩 𝘼𝙡𝙡𝙤𝙬𝙚𝙙 𝙏𝙤 𝙥𝙡𝙖𝙮 𝙤𝙣  {BOT_NAME}."
             )
         file_path = audio_dl(url)
 
