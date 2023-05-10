@@ -45,7 +45,7 @@ jaybuttons = InlineKeyboardMarkup(
     [
          [
 
-InlineKeyboardButton(text="❰𝙊𝙬𝙣𝙚𝙧❱", url=f"https://t.me/GJ516"),
+InlineKeyboardButton(text="❰𝙊𝙬𝙣𝙚𝙧❱", url=f"https://t.me/export_gabbar"),
 
 InlineKeyboardButton (text="❰𝙂𝙧𝙤𝙪𝙥❱", url=config.SUPPORT_CHAT),
 
