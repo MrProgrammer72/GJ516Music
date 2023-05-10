@@ -54,7 +54,7 @@ from GJ516Music.Helpers.active import add_active_chat, is_active_chat, stream_on
 from GJ516Music.Helpers.downloaders import audio_dl
 from GJ516Music.Helpers.errors import DurationLimitError
 from GJ516Music.Helpers.gets import get_file_name, get_url
-from GJ516Music.Helpers.inline import buttons
+from GJ516Music.Helpers.inline import buttons, jaybuttons
 from GJ516Music.Helpers.queue import put
 from GJ516Music.Helpers.thumbnails import gen_qthumb, gen_thumb
 
@@ -222,7 +222,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo=qimg,
             caption=f"**⏳ 𝘼𝙙𝙙𝙚𝙙 𝙩𝙤 𝙌𝙪𝙚𝙪𝙚 𝙖𝙩 #{position}**\n\n**💡𝙏𝙞𝙩𝙡𝙚:** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n**⏱𝘿𝙪𝙧𝙖𝙩𝙞𝙤𝙣:** `{duration}`\n**👤𝘼𝙙𝙙𝙚𝙙 𝘽𝙮:** {ruser}",
-            reply_markup=buttons,
+            reply_markup=jaybuttons,
         )
     else:
         stream = AudioPiped(file_path, audio_parameters=HighQualityAudio())
