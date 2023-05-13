@@ -68,7 +68,7 @@
  <p align="center"><a href="https://cloud.okteto.com/deploy?repository=https://github.com/MrProgrammer72/GJ516Music"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="200" height="35.45"/></a></p> 
 
  The second easiest way to host this bot, Deploy on Okteto Cloud 
- ## ᴅᴇᴘʟᴏʏ ᴏɴ ᴠᴘꜱ ꜱᴇʀᴠᴇʀ 📡
+ ## ᴅᴇᴘʟᴏʏ ᴏɴ ᴠᴘꜱ ꜱᴇʀᴠᴇʀ's 📡
    ```sh 
  - Get your [Necessary Variables](https://github.com/MrProgrammer72/GJ516Music/blob/master/sample.env) 
  - Upgrade and Update by : 
