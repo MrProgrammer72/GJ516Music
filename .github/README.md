@@ -69,6 +69,7 @@
 
  The second easiest way to host this bot, Deploy on Okteto Cloud 
  ## ᴅᴇᴘʟᴏʏ ᴏɴ ᴠᴘꜱ ꜱᴇʀᴠᴇʀ's 📡
+<p> 
    ```sh 
  - Get your [Necessary Variables](https://github.com/MrProgrammer72/GJ516Music/blob/master/sample.env) 
  - Upgrade and Update by : 
