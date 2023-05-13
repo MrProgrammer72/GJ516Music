@@ -48,7 +48,7 @@
 <summary>𝗦𝗲𝘀𝘀𝗶𝗼𝗻 🥀</summary>
 
 - 🧪 Get `SESSION_NAME` variable: 
-  - [``Pyrogram Session``](https://telegram.me/StringFatherBot)
+  - [``Pyrogram Session``](https://telegram.me/)
  </details>
  
  <details>
@@ -65,25 +65,36 @@
 
  ## ᴅᴇᴩʟᴏʏ ᴏɴ ᴏᴋᴛᴇᴛᴏ 
 
- <p align="center"><a href="https://cloud.okteto.com/deploy?repository=https://github.com/MrProgrammer72/GJ516VCBOT"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="200" height="35.45"/></a></p> 
+ <p align="center"><a href="https://cloud.okteto.com/deploy?repository=https://github.com/MrProgrammer72/GJ516Music"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="200" height="35.45"/></a></p> 
 
  The second easiest way to host this bot, Deploy on Okteto Cloud 
  ## ᴅᴇᴘʟᴏʏ ᴏɴ ᴠᴘꜱ ꜱᴇʀᴠᴇʀ 📡
    ```sh 
- sudo apt update && apt upgrade -y 
- sudo apt install git curl python3-pip ffmpeg -y 
- pip3 install -U pip 
- Curl -sL https://deb.nodesource.com/setup_16.x | bash - 
- sudo apt-get install -y nodejs 
- npm i -g npm 
- git clone https://github.com/MrProgrammer72/GJ516VCBOT # Clone your repo. 
- cd GJ516VCBOT
- pip3 install -U -r requirements.txt 
- cp example.env .env #Use vim to edit ENVs 
- vim .env #Fill up your ENVs ( Steps press i to enter in insert mode then edit the file. Press Esc to exit the editing mode then type :wq! and press Enter key to save the file.) 
- python3 main.py # Run the bot 
-
- ``` 
+ - Get your [Necessary Variables](https://github.com/MrProgrammer72/GJ516Music/blob/master/sample.env) 
+ - Upgrade and Update by : 
+ `sudo apt-get update && sudo apt-get upgrade -y` 
+ - Install required packages by : 
+ `sudo apt-get install python3-pip ffmpeg -y` 
+ - Install pip by : 
+ `sudo pip3 install -U pip` 
+ - Install node by : 
+ `curl -fssL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm` 
+ - Clone the repository by : 
+ `git clone https://github.com/MrProgrammer72/GJ516Music && cd GJ516music` 
+ - Install requirements by : 
+ `pip3 install -U -r requirements.txt` 
+ - Fill your variables in the env by : 
+ `vi sample.env`<br> 
+ Press `I` on the keyboard for editing env<br> 
+ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br> 
+ - Rename the env file by : 
+ `mv sample.env .env` 
+ - Install tmux to keep running your bot when you close the terminal by : 
+ `sudo apt install tmux && tmux` 
+ - Finally run the bot by : 
+ `bash GJ516` 
+ - For getting out from tmux session<br> 
+ Press `Ctrl+b` and then `d`
 
  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a> 
 
