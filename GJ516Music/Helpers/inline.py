@@ -85,7 +85,7 @@ gp_buttons = [
         InlineKeyboardButton(text="❰𝗚𝗿𝗼𝘂𝗽❱", url=config.SUPPORT_CHAT),
     ],
     [
-        InlineKeyboardButton(text="❰𝙂𝙞𝙩𝙍𝙚𝙥𝙤❱ ", url=f"https://github.com/MrProgrammer72/GJ516Music"),
+        InlineKeyboardButton(text="❰𝗗𝗜𝗦𝗖𝗨𝗦𝗦❱ ", url=f"https://t.me/GJ516_DISCUSS_GROUP"),
     ],
 ]
 
