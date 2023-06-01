@@ -94,5 +94,7 @@ helpmenu = [
 
 help_back = [
     [InlineKeyboardButton(text="❰𝗚𝗿𝗼𝘂𝗽❱",
+callback_data="close"),
+
     ],
 ]
