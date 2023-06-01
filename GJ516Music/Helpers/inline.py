@@ -93,7 +93,7 @@ helpmenu = [
 
 
 help_back = [
-    [InlineKeyboardButton(text="❰𝗚𝗿𝗼𝘂𝗽❱",
+    [InlineKeyboardButton(text="❰𝗖𝗹𝗼𝘀𝗲❱",
 callback_data="close"),
 
     ],
