@@ -58,17 +58,10 @@ InlineKeyboardButton (text="❰𝙂𝙧𝙤𝙪𝙥❱", url=config.SUPPORT_CHAT
 pm_buttons = [
     [
         InlineKeyboardButton(
-            text="➕ 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 ➕",
-            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-        )
-    ],
-    [InlineKeyboardButton(text="❰𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨❱", callback_data="GJ516_help")],
-    [
-        InlineKeyboardButton(text="❰𝗨𝗽𝗱𝗮𝘁𝗲𝘀❱", url=config.SUPPORT_CHANNEL),
-        InlineKeyboardButton(text="❰𝗚𝗿𝗼𝘂𝗽❱", url=config.SUPPORT_CHAT),
-    ],
-    [
-        InlineKeyboardButton(text="❰𝙊𝙬𝙣𝙚𝙧❱ ", user_id=config.OWNER_ID),
+            text="❰𝘼𝙙𝙙 𝙢𝙚❱",
+            url=f"https://t.me/{BOT_USERNAME}?startgroup=true" ),
+   
+        InlineKeyboardButton(text="❰𝙃𝙚𝙡𝙥❱", callback_data="GJ516_help"),
     ],
 ]
 
@@ -77,41 +70,29 @@ gp_buttons = [
     [
         InlineKeyboardButton(
             text="➕ 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 ➕ ",
-            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-        )
-    ],
-    [
+            url=f"https://t.me/{BOT_USERNAME}?startgroup=true" ),
         InlineKeyboardButton(text="❰𝗨𝗽𝗱𝗮𝘁𝗲𝘀❱", url=config.SUPPORT_CHANNEL),
-        InlineKeyboardButton(text="❰𝗚𝗿𝗼𝘂𝗽❱", url=config.SUPPORT_CHAT),
-    ],
-    [
-        InlineKeyboardButton(text="❰𝗗𝗜𝗦𝗖𝗨𝗦𝗦❱ ", url=f"https://t.me/GJ516_DISCUSS_GROUP"),
-    ],
+     ],
 ]
 
 
 helpmenu = [
     [
         InlineKeyboardButton(
-            text="𝗔𝗱𝗺𝗶𝗻'𝘀",
+            text="𝘽𝙤𝙩 𝙪𝙨𝙚𝙧",
             callback_data="GJ516_cb help",
-        )
-    ],
+        ),
+    
+        InlineKeyboardButton(text="𝙎𝙪𝙙𝙤 𝙪𝙨𝙚𝙧", callback_data="GJ516_cb sudo"),
+   ],
+
     [
-        InlineKeyboardButton(text="𝙎𝙪𝙙𝙤", callback_data="GJ516_cb sudo"),
-        InlineKeyboardButton(text="𝙂𝙞𝙩𝙍𝙚𝙥𝙤",url=f"https://github.com/MrProgrammer72/GJ516Music"),
-    ],
-    [
-        InlineKeyboardButton(text="❰𝗕𝗮𝗰𝗸❱", callback_data="GJ516_home"),
-        InlineKeyboardButton(text="❰𝗖𝗹𝗼𝘀𝗲❱", callback_data="close"),
+        InlineKeyboardButton(text="◁", callback_data="GJ516_home"),
     ],
 ]
 
 
 help_back = [
-    [InlineKeyboardButton(text="❰𝗚𝗿𝗼𝘂𝗽❱", url=config.SUPPORT_CHAT)],
-    [
-        InlineKeyboardButton(text="❰𝗕𝗮𝗰𝗸❱", callback_data="GJ516_help"),
-        InlineKeyboardButton(text="❰𝗖𝗹𝗼𝘀𝗲❱", callback_data="close"),
+    [InlineKeyboardButton(text="❰𝗚𝗿𝗼𝘂𝗽❱",
     ],
 ]
