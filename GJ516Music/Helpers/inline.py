@@ -58,10 +58,10 @@ InlineKeyboardButton (text="❰𝙂𝙧𝙤𝙪𝙥❱", url=config.SUPPORT_CHAT
 pm_buttons = [
     [
         InlineKeyboardButton(
-            text="❰𝘼𝙙𝙙 𝙢𝙚❱",
+            text="❰𝘼𝘿𝘿𝙈𝙀❱",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true" ),
    
-        InlineKeyboardButton(text="❰𝙃𝙚𝙡𝙥❱", callback_data="GJ516_help"),
+        InlineKeyboardButton(text="❰𝙃𝙀𝙇𝙋❱", callback_data="GJ516_help"),
     ],
 ]
 
