@@ -63,6 +63,9 @@ pm_buttons = [
    
         InlineKeyboardButton(text="❰𝙃𝙀𝙇𝙋❱", callback_data="GJ516_help"),
     ],
+ [ 
+InlineKeyboardButton(text="❰𝙊𝙬𝙣𝙚𝙧❱", user_id=config.OWNER_ID),
+     ],
 ]
 
 
