@@ -95,7 +95,7 @@ helpmenu = [
 help_back = [
     [InlineKeyboardButton(text="◁",
 callback_data="GJ516_home"),
-    InlineKeyboardButton(text="𝗖𝗹𝗼𝘀𝗲", callback_data="close")
+    InlineKeyboardButton(text="𝗖𝗹𝗼𝘀𝗲", callback_data="close"),
 
     ],
 ]
