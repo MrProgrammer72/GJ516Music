@@ -73,7 +73,7 @@ pm_buttons = [
 gp_buttons = [
     [
         InlineKeyboardButton(
-            text="➕ 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 ➕ ",
+            text="➕ 𝗔𝗱𝗱 𝗠𝗲 ➕ ",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true" ),
         InlineKeyboardButton(text="❰𝘿𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙧❱", url=f"https://t.me/export_gabbar"),
      ],
