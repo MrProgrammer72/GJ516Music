@@ -169,7 +169,7 @@ async def play(_, message: Message):
                 secmul *= 60
 
         except Exception as e:
-            return await fallen.edit_text(f"𝙎𝙤𝙢𝙚𝙩𝙝𝙞𝙣𝙜 𝙒𝙚𝙣𝙩 𝙒𝙧𝙤𝙣𝙜\n\n**𝙀𝙧𝙧𝙤𝙧:** `{e}`")
+            return await GJ516.edit_text(f"𝙎𝙤𝙢𝙚𝙩𝙝𝙞𝙣𝙜 𝙒𝙚𝙣𝙩 𝙒𝙧𝙤𝙣𝙜\n\n**𝙀𝙧𝙧𝙤𝙧:** `{e}`")
 
         if (dur / 60) > DURATION_LIMIT:
             return await GJ516.edit_text(
