@@ -47,7 +47,7 @@ pm_buttons = [
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
-    [InlineKeyboardButton(text="❰𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨❱", callback_data="fallen_help")],
+    [InlineKeyboardButton(text="❰𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨❱", callback_data="GJ516_help")],
     [
         InlineKeyboardButton(text="❰𝗖𝗵𝗮𝗻𝗻𝗲𝗹❱", url=config.SUPPORT_CHANNEL),
         InlineKeyboardButton(text="❰𝗚𝗿𝗼𝘂𝗽❱", url=config.SUPPORT_CHAT),
@@ -79,7 +79,7 @@ helpmenu = [
         ),
         InlineKeyboardButton(text="𝙎𝙪𝙙𝙤𝙪𝙨𝙚𝙧", callback_data="GJ516_cb sudo"),
     ],    
-    [   InlineKeyboardButton(text="𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆", url=f"https://github.com/MrProgrammer72/GJ516Music"),
+    [   InlineKeyboardButton(text="⚡𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆⚡", url=f"https://github.com/MrProgrammer72/GJ516Music"),
     ],
     [
         InlineKeyboardButton(text="◁", callback_data="GJ516_home"),
