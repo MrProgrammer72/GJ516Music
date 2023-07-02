@@ -23,7 +23,7 @@
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 import config
-from GJ516Music import BOT_USERNAME, OWNER_ID, SUPPORT_CHAT
+from GJ516Music import BOT_USERNAME
 
 close_key = InlineKeyboardMarkup(
     [[InlineKeyboardButton(text="❰𝗖𝗹𝗼𝘀𝗲❱", callback_data="close")]]
