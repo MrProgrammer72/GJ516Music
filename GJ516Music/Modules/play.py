@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 MrProgrammer72 
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -37,7 +37,7 @@ from pytgcalls.types import AudioPiped, HighQualityAudio
 from youtube_search import YoutubeSearch
 
 from config import DURATION_LIMIT
-from FallenMusic import (
+from GJ516Music import (
     ASS_ID,
     ASS_MENTION,
     ASS_NAME,
@@ -50,13 +50,13 @@ from FallenMusic import (
     fallendb,
     pytgcalls,
 )
-from FallenMusic.Helpers.active import add_active_chat, is_active_chat, stream_on
-from FallenMusic.Helpers.downloaders import audio_dl
-from FallenMusic.Helpers.errors import DurationLimitError
-from FallenMusic.Helpers.gets import get_file_name, get_url
-from FallenMusic.Helpers.inline import buttons
-from FallenMusic.Helpers.queue import put
-from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
+from GJ516Music.Helpers.active import add_active_chat, is_active_chat, stream_on
+from GJ516Music.Helpers.downloaders import audio_dl
+from GJ516Music.Helpers.errors import DurationLimitError
+from GJ516Music.Helpers.gets import get_file_name, get_url
+from GJ516Music.Helpers.inline import buttons
+from GJ516Music.Helpers.queue import put
+from GJ516Music.Helpers.thumbnails import gen_qthumb, gen_thumb
 
 
 @app.on_message(
@@ -66,7 +66,7 @@ from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
     & ~filters.via_bot
 )
 async def play(_, message: Message):
-    fallen = await message.reply_text("» ᴘʀᴏᴄᴇssɪɴɢ, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...")
+    GJ516 = await message.reply_text("» ᴘʀᴏᴄᴇssɪɴɢ, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...")
     try:
         await message.delete()
     except:
@@ -76,7 +76,7 @@ async def play(_, message: Message):
         try:
             get = await app.get_chat_member(message.chat.id, ASS_ID)
         except ChatAdminRequired:
-            return await fallen.edit_text(
+            return await GJ516.edit_text(
                 f"» ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴs ᴛᴏ ɪɴᴠɪᴛᴇ ᴜsᴇʀs ᴠɪᴀ ʟɪɴᴋ ғᴏʀ ɪɴᴠɪᴛɪɴɢ {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}."
             )
         if get.status == ChatMemberStatus.BANNED:
@@ -90,7 +90,7 @@ async def play(_, message: Message):
                     ]
                 ]
             )
-            return await fallen.edit_text(
+            return await GJ516.edit_text(
                 text=f"» {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ɪs ʙᴀɴɴᴇᴅ ɪɴ {message.chat.title}\n\n𖢵 ɪᴅ : `{ASS_ID}`\n𖢵 ɴᴀᴍᴇ : {ASS_MENTION}\n𖢵 ᴜsᴇʀɴᴀᴍᴇ : @{ASS_USERNAME}\n\nᴘʟᴇᴀsᴇ ᴜɴʙᴀɴ ᴛʜᴇ ᴀssɪsᴛᴀɴᴛ ᴀɴᴅ ᴘʟᴀʏ ᴀɢᴀɪɴ...",
                 reply_markup=unban_butt,
             )
@@ -105,28 +105,28 @@ async def play(_, message: Message):
             try:
                 invitelink = await app.export_chat_invite_link(message.chat.id)
             except ChatAdminRequired:
-                return await fallen.edit_text(
+                return await GJ516.edit_text(
                     f"» ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴs ᴛᴏ ɪɴᴠɪᴛᴇ ᴜsᴇʀs ᴠɪᴀ ʟɪɴᴋ ғᴏʀ ɪɴᴠɪᴛɪɴɢ {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}."
                 )
             except Exception as ex:
-                return await fallen.edit_text(
+                return await GJ516.edit_text(
                     f"ғᴀɪʟᴇᴅ ᴛᴏ ɪɴᴠɪᴛᴇ {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
                 )
         if invitelink.startswith("https://t.me/+"):
             invitelink = invitelink.replace("https://t.me/+", "https://t.me/joinchat/")
-        anon = await fallen.edit_text(
+        anon = await GJ516.edit_text(
             f"ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...\n\nɪɴᴠɪᴛɪɴɢ {ASS_NAME} ᴛᴏ {message.chat.title}."
         )
         try:
             await app2.join_chat(invitelink)
             await asyncio.sleep(2)
-            await fallen.edit_text(
+            await GJ516.edit_text(
                 f"{ASS_NAME} ᴊᴏɪɴᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ,\n\nsᴛᴀʀᴛɪɴɢ sᴛʀᴇᴀᴍ..."
             )
         except UserAlreadyParticipant:
             pass
         except Exception as ex:
-            return await fallen.edit_text(
+            return await GJ516.edit_text(
                 f"ғᴀɪʟᴇᴅ ᴛᴏ ɪɴᴠɪᴛᴇ {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
             )
         try:
@@ -172,13 +172,13 @@ async def play(_, message: Message):
             return await fallen.edit_text(f"sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ\n\n**ᴇʀʀᴏʀ :** `{e}`")
 
         if (dur / 60) > DURATION_LIMIT:
-            return await fallen.edit_text(
+            return await GJ516.edit_text(
                 f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ ᴏɴ {BOT_NAME}."
             )
         file_path = audio_dl(url)
     else:
         if len(message.command) < 2:
-            return await fallen.edit_text("» ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴɴᴀ ᴘʟᴀʏ ʙᴀʙʏ ?")
+            return await GJ516.edit_text("» ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴɴᴀ ᴘʟᴀʏ ʙᴀʙʏ ?")
         await fallen.edit_text("🔎")
         query = message.text.split(None, 1)[1]
         try:
@@ -198,7 +198,7 @@ async def play(_, message: Message):
             return await fallen.edit("» ғᴀɪʟᴇᴅ ᴛᴏ ᴘʀᴏᴄᴇss ᴏ̨ᴜᴇʀʏ, ᴛʀʏ ᴘʟᴀʏɪɴɢ ᴀɢᴀɪɴ...")
 
         if (dur / 60) > DURATION_LIMIT:
-            return await fallen.edit(
+            return await GJ516.edit(
                 f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ ᴏɴ {BOT_NAME}."
             )
         file_path = audio_dl(url)
@@ -234,15 +234,15 @@ async def play(_, message: Message):
             )
 
         except NoActiveGroupCall:
-            return await fallen.edit_text(
+            return await GJ516.edit_text(
                 "**» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ғᴏᴜɴᴅ.**\n\nᴩʟᴇᴀsᴇ ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ."
             )
         except TelegramServerError:
-            return await fallen.edit_text(
+            return await GJ516.edit_text(
                 "» ᴛᴇʟᴇɢʀᴀᴍ ɪs ʜᴀᴠɪɴɢ sᴏᴍᴇ ɪɴᴛᴇʀɴᴀʟ ᴘʀᴏʙʟᴇᴍs, ᴘʟᴇᴀsᴇ ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ."
             )
         except UnMuteNeeded:
-            return await fallen.edit_text(
+            return await GJ516.edit_text(
                 f"» {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ɪs ᴍᴜᴛᴇᴅ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ,\n\nᴘʟᴇᴀsᴇ ᴜɴᴍᴜᴛᴇ {ASS_MENTION} ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɴᴅ ᴛʀʏ ᴘʟᴀʏɪɴɢ ᴀɢᴀɪɴ."
             )
 
@@ -255,4 +255,4 @@ async def play(_, message: Message):
             reply_markup=buttons,
         )
 
-    return await fallen.delete()
+    return await GJ516.delete()
