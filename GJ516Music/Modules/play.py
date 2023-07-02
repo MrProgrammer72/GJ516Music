@@ -217,7 +217,7 @@ async def play(_, message: Message):
             ruser,
             message.from_user.id,
         )
-        position = len(fallendb.get(message.chat.id))
+        position = len(GJ516db.get(message.chat.id))
         qimg = await gen_qthumb(videoid, message.from_user.id)
         await message.reply_photo(
             photo=qimg,
