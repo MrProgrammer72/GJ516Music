@@ -66,7 +66,7 @@ gp_buttons = [
         )
     ],
     [
-        InlineKeyboardButton(text="GIT REPO", url=f"https://github.com/MrProgrammer72/GJ516Music"),
+        InlineKeyboardButton(text="𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆", url=f"https://github.com/MrProgrammer72/GJ516Music"),
     ],
 ]
 
@@ -79,7 +79,7 @@ helpmenu = [
         ),
         InlineKeyboardButton(text="𝙎𝙪𝙙𝙤𝙪𝙨𝙚𝙧", callback_data="GJ516_cb sudo"),
     ],    
-    [   InlineKeyboardButton(text="REO", url=f"https://github.com/MrProgrammer72/GJ516Music"),
+    [   InlineKeyboardButton(text="𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆", url=f"https://github.com/MrProgrammer72/GJ516Music"),
     ],
     [
         InlineKeyboardButton(text="◁", callback_data="GJ516_home"),
