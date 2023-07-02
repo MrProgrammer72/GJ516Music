@@ -178,7 +178,7 @@ async def play(_, message: Message):
         file_path = audio_dl(url)
     else:
         if len(message.command) < 2:
-            return await GJ516.edit_text(" 𝙂𝙞𝙫𝙚 𝙈𝙚 𝙔𝙤𝙪𝙧 𝙌𝙪𝙚𝙧𝙮 𝙒𝙝𝙞𝙘𝙝 𝙔𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙋𝙡𝙖𝙮 ")  ?")
+            return await GJ516.edit_text(" 𝙂𝙞𝙫𝙚 𝙈𝙚 𝙔𝙤𝙪𝙧 𝙌𝙪𝙚𝙧𝙮 𝙒𝙝𝙞𝙘𝙝 𝙔𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙋𝙡𝙖𝙮 ?")
         await GJ516.edit_text("⚡")
         query = message.text.split(None, 1)[1]
         try:
