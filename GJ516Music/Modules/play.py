@@ -115,19 +115,19 @@ async def play(_, message: Message):
         if invitelink.startswith("https://t.me/+"):
             invitelink = invitelink.replace("https://t.me/+", "https://t.me/joinchat/")
         anon = await GJ516.edit_text(
-            f"ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...\n\nɪɴᴠɪᴛɪɴɢ {ASS_NAME} ᴛᴏ {message.chat.title}."
+            f"𝙋𝙡𝙚𝙖𝙨𝙚 𝙒𝙖𝙞𝙩....\n\n𝙄𝙣𝙫𝙞𝙩𝙞𝙣𝙜 {ASS_NAME} ᴛᴏ {message.chat.title}."
         )
         try:
             await app2.join_chat(invitelink)
             await asyncio.sleep(2)
             await GJ516.edit_text(
-                f"{ASS_NAME} 𝙋𝙡𝙚𝙖𝙨𝙚 𝙒𝙖𝙞𝙩....,\n\nsᴛᴀʀᴛɪɴɢ sᴛʀᴇᴀᴍ..."
+                f"{ASS_NAME} 𝙅𝙤𝙞𝙣𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮,\n\n𝙎𝙩𝙖𝙧𝙩𝙞𝙣𝙜 𝙎𝙩𝙧𝙚𝙖𝙢....."
             )
         except UserAlreadyParticipant:
             pass
         except Exception as ex:
             return await GJ516.edit_text(
-                f"ғᴀɪʟᴇᴅ ᴛᴏ ɪɴᴠɪᴛᴇ {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
+                f"𝙁𝙖𝙞𝙡𝙚𝙙 𝙏𝙤 𝙄𝙣𝙫𝙞𝙩𝙚 {BOT_NAME} 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙏𝙤 {message.chat.title}.\n\n**𝙍𝙚𝙖𝙨𝙤𝙣 :** `{ex}`"
             )
         try:
             await app2.resolve_peer(invitelink)
@@ -144,7 +144,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ ᴏɴ {BOT_NAME}."
+                f"»𝙎𝙤𝙧𝙧𝙮, 𝙏𝙧𝙖𝙘𝙠 𝙇𝙤𝙣𝙜𝙚𝙧 𝙏𝙝𝙖𝙣  {DURATION_LIMIT} 𝙈𝙞𝙣 𝘼𝙧𝙚 𝙉𝙤𝙩 𝘼𝙡𝙡𝙤𝙬𝙚𝙙 𝙏𝙤 𝙥𝙡𝙖𝙮 𝙤𝙣 {BOT_NAME}."
             )
 
         file_name = get_file_name(audio)
@@ -169,17 +169,17 @@ async def play(_, message: Message):
                 secmul *= 60
 
         except Exception as e:
-            return await fallen.edit_text(f"sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ\n\n**ᴇʀʀᴏʀ :** `{e}`")
+            return await fallen.edit_text(f"𝙎𝙤𝙢𝙚𝙩𝙝𝙞𝙣𝙜 𝙒𝙚𝙣𝙩 𝙒𝙧𝙤𝙣𝙜\n\n**𝙀𝙧𝙧𝙤𝙧:** `{e}`")
 
         if (dur / 60) > DURATION_LIMIT:
             return await GJ516.edit_text(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ ᴏɴ {BOT_NAME}."
+                f"»𝙎𝙤𝙧𝙧𝙮, 𝙏𝙧𝙖𝙘𝙠 𝙇𝙤𝙣𝙜𝙚𝙧 𝙏𝙝𝙖𝙣   {DURATION_LIMIT} 𝙈𝙞𝙣 𝘼𝙧𝙚 𝙉𝙤𝙩 𝘼𝙡𝙡𝙤𝙬𝙚𝙙 𝙏𝙤 𝙥𝙡𝙖𝙮 𝙤𝙣  {BOT_NAME}."
             )
         file_path = audio_dl(url)
     else:
         if len(message.command) < 2:
-            return await GJ516.edit_text("» ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴɴᴀ ᴘʟᴀʏ ʙᴀʙʏ ?")
-        await fallen.edit_text("🔎")
+            return await GJ516.edit_text(" 𝙂𝙞𝙫𝙚 𝙈𝙚 𝙔𝙤𝙪𝙧 𝙌𝙪𝙚𝙧𝙮 𝙒𝙝𝙞𝙘𝙝 𝙔𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙋𝙡𝙖𝙮 ")  ?")
+        await GJ516.edit_text("⚡")
         query = message.text.split(None, 1)[1]
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -195,11 +195,11 @@ async def play(_, message: Message):
 
         except Exception as e:
             LOGGER.error(str(e))
-            return await fallen.edit("» ғᴀɪʟᴇᴅ ᴛᴏ ᴘʀᴏᴄᴇss ᴏ̨ᴜᴇʀʏ, ᴛʀʏ ᴘʟᴀʏɪɴɢ ᴀɢᴀɪɴ...")
+            return await GJ516.edit("𝙁𝙖𝙞𝙡𝙚𝙙 𝙩𝙤 𝙋𝙧𝙤𝙘𝙚𝙨𝙨 𝙦𝙪𝙚𝙧𝙮, 𝙏𝙧𝙮 𝙋𝙡𝙖𝙮𝙞𝙣𝙜 𝙖𝙜𝙖𝙞𝙣......")
 
         if (dur / 60) > DURATION_LIMIT:
             return await GJ516.edit(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ ᴏɴ {BOT_NAME}."
+                f"»𝙎𝙤𝙧𝙧𝙮, 𝙏𝙧𝙖𝙘𝙠 𝙇𝙤𝙣𝙜𝙚𝙧 𝙏𝙝𝙖𝙣  {DURATION_LIMIT} 𝙈𝙞𝙣 𝘼𝙧𝙚 𝙉𝙤𝙩 𝘼𝙡𝙡𝙤𝙬𝙚𝙙 𝙏𝙤 𝙥𝙡𝙖𝙮 𝙤𝙣  {BOT_NAME}."
             )
         file_path = audio_dl(url)
 
@@ -221,7 +221,7 @@ async def play(_, message: Message):
         qimg = await gen_qthumb(videoid, message.from_user.id)
         await message.reply_photo(
             photo=qimg,
-            caption=f"**➻ ᴀᴅᴅᴇᴅ ᴛᴏ ᴏ̨ᴜᴇᴜᴇ ᴀᴛ {position}**\n\n‣ **ᴛɪᴛʟᴇ :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **ᴅᴜʀᴀᴛɪᴏɴ :** `{duration}` ᴍɪɴᴜᴛᴇs\n‣ **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {ruser}",
+            caption=f"**⏳ 𝘼𝙙𝙙𝙚𝙙 𝙩𝙤 𝙌𝙪𝙚𝙪𝙚 𝙖𝙩 {position}**\n\n💡 **𝙏𝙞𝙩𝙡𝙚 :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n⏱ **𝘿𝙪𝙧𝙖𝙩𝙞𝙤𝙣 :** `{duration}` ᴍɪɴᴜᴛᴇs\n👤 **𝘼𝙙𝙙𝙚𝙙 𝘽𝙮 :** {ruser}",
             reply_markup=buttons,
         )
     else:
@@ -235,15 +235,15 @@ async def play(_, message: Message):
 
         except NoActiveGroupCall:
             return await GJ516.edit_text(
-                "**» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ғᴏᴜɴᴅ.**\n\nᴩʟᴇᴀsᴇ ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ."
+                "**𝙉𝙤 𝘼𝙘𝙩𝙞𝙫𝙚 𝙑𝙞𝙙𝙚𝙤𝘾𝙝𝙖𝙩 𝙁𝙤𝙪𝙣𝙙..**\n\n𝙋𝙡𝙚𝙖𝙨𝙚 𝙈𝙖𝙠𝙚 𝙎𝙪𝙧𝙚 𝙎𝙩𝙖𝙧𝙩𝙚𝙙 𝙏𝙝𝙚 𝙑𝙤𝙞𝙘𝙚𝘾𝙝𝙖𝙩 .."
             )
         except TelegramServerError:
             return await GJ516.edit_text(
-                "» ᴛᴇʟᴇɢʀᴀᴍ ɪs ʜᴀᴠɪɴɢ sᴏᴍᴇ ɪɴᴛᴇʀɴᴀʟ ᴘʀᴏʙʟᴇᴍs, ᴘʟᴇᴀsᴇ ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ."
+                "»𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝙞𝙨 𝙝𝙖𝙫𝙞𝙣𝙜 𝙎𝙤𝙢𝙚 𝙄𝙣𝙩𝙚𝙧𝙣𝙖𝙡 𝙋𝙧𝙤𝙗𝙡𝙚𝙢, 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙨𝙩𝙖𝙧𝙩 𝙏𝙝𝙚 𝙑𝙞𝙙𝙚𝙤𝘾𝙝𝙖𝙩 𝘼𝙣𝙙 𝙏𝙧𝙮 𝘼𝙜𝙖𝙞𝙣."
             )
         except UnMuteNeeded:
             return await GJ516.edit_text(
-                f"» {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ɪs ᴍᴜᴛᴇᴅ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ,\n\nᴘʟᴇᴀsᴇ ᴜɴᴍᴜᴛᴇ {ASS_MENTION} ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɴᴅ ᴛʀʏ ᴘʟᴀʏɪɴɢ ᴀɢᴀɪɴ."
+                f"» {BOT_NAME} 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙞𝙨 𝙈𝙪𝙩𝙚𝙙 𝙊𝙣 𝙑𝙞𝙙𝙚𝙤𝘾𝙝𝙖𝙩,\n\n𝙋𝙡𝙚𝙖𝙨𝙚 𝙐𝙣𝙢𝙪𝙩𝙚  {ASS_MENTION} 𝙊𝙣 𝙑𝙞𝙙𝙚𝙤𝘾𝙝𝙖𝙩 𝘼𝙣𝙙 𝙏𝙧𝙮 𝙋𝙡𝙖𝙮𝙞𝙣𝙜 𝘼𝙜𝙖𝙞𝙣."
             )
 
         imgt = await gen_thumb(videoid, message.from_user.id)
@@ -251,7 +251,7 @@ async def play(_, message: Message):
         await add_active_chat(message.chat.id)
         await message.reply_photo(
             photo=imgt,
-            caption=f"**➻ sᴛᴀʀᴛᴇᴅ sᴛʀᴇᴀᴍɪɴɢ**\n\n‣ **ᴛɪᴛʟᴇ :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **ᴅᴜʀᴀᴛɪᴏɴ :** `{duration}` ᴍɪɴᴜᴛᴇs\n‣ **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {ruser}",
+            caption=f"**📡 𝙎𝙩𝙖𝙧𝙩𝙚𝙙 𝙎𝙩𝙧𝙚𝙖𝙢𝙞𝙣𝙜 💡**\n\n💡 **𝙏𝙞𝙩𝙡𝙚 :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **👤𝙍𝙚𝙦𝙪𝙚𝙨𝙩𝙚𝙙 𝘽𝙮 :** {ruser}",
             reply_markup=buttons,
         )
 
