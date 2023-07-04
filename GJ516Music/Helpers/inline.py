@@ -78,7 +78,7 @@ helpmenu = [
             callback_data="GJ516_cb help",
         ),
  
-        InlineKeyboradButton(text="", callback_data="GJ516_cb owner"),
+        InlineKeyboradButton(text="𝙊𝙬𝙣𝙚𝙧", callback_data="GJ516_cb owner"),
 
         InlineKeyboardButton(text="𝙎𝙪𝙙𝙤𝙪𝙨𝙚𝙧", callback_data="GJ516_cb sudo"),
     ],    
