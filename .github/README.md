@@ -72,7 +72,7 @@
 
   <p> 
 
- Checkout [Docs](https://github.com/MrProgrammer72/YukkiMusicBot/wiki/yukki-Music-Bot-docs) for Detailed Explanation on VPS Deploy
+ Checkout [Docs](https://github.com/MrProgrammer72/GJ516Music/wiki) for Detailed Explanation on VPS Deploy
  </p> 
 
  </details>
