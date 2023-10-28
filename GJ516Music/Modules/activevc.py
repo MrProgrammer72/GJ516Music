@@ -30,7 +30,7 @@ from GJ516Music.Helpers.inline import close_key
 
 @app.on_message(filters.command("activevc") & SUDOERS)
 async def activevc(_, message: Message):
-    mystic = await message.reply_text("𝙅𝙖𝙮 𝙂𝙚𝙩𝙩𝙞𝙣𝙜 𝘼𝙘𝙩𝙞𝙫𝙚 𝙑𝙤𝙞𝙘𝙚𝘾𝙝𝙖𝙩𝙨 𝙇𝙞𝙨𝙩... ☘")
+    mystic = await message.reply_text("𝙅𝙖𝙮 𝙂𝙚𝙩𝙩𝙞𝙣𝙜 𝘼𝙘𝙩𝙞𝙫𝙚 𝙑𝙤𝙞𝙘𝙚𝘾𝙝𝙖𝙩𝙨 𝙇𝙞𝙨𝙩.... ☘")
     chats = await get_active_chats()
     text = ""
     j = 0
