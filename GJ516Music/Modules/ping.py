@@ -22,7 +22,6 @@
 
 import time
 from datetime import datetime
-import random
 
 import psutil
 from pyrogram import filters
@@ -36,7 +35,7 @@ from GJ516Music.Helpers import get_readable_time
 @app.on_message(filters.command("ping"))
 async def ping_fallen(_, message: Message):
     hmm = await message.reply_photo(
-        photo=random.choice(PING_IMG), caption=f"{BOT_NAME} 𝙄𝙨 𝙋𝙞𝙣𝙜𝙞𝙣𝙜...."
+        photo=config.PING_IMG, caption=f"{BOT_NAME} 𝙄𝙨 𝙋𝙞𝙣𝙜𝙞𝙣𝙜...."
     )
     upt = int(time.time() - StartTime)
     cpu = psutil.cpu_percent(interval=0.5)
